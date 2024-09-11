@@ -22,10 +22,11 @@ function calculateTax(income, expenses) {
     const result =  "Invalid Email";
     return result;
     }
-}
+ }
 
 
-function checkDigitsInName(name) {
+
+ function checkDigitsInName(name) {
     if(typeof(name) !== "string"){
     let output = "Invalid Input";
     return output;
@@ -35,17 +36,16 @@ function checkDigitsInName(name) {
     for(let i = 0 ; i < name.length; i++){
     if(name[i] >= "0" && name[i] <= "9"){
     result = true;
-    }
-    else{
-    result = false;
-    }
-    }
     return result;
     }
-}
+    }
+    return false;
+    }
+ }
 
 
-function calculateFinalScore(obj) {
+
+ function calculateFinalScore(obj) {
     if(typeof(obj) !== "object"){
         let result = "Invalid Input";
         return result;
@@ -81,11 +81,11 @@ function calculateFinalScore(obj) {
             return result;
         }
     }
-}
+ }
 
 
 
-function  waitingTime(waitingTimes , serialNumber) {
+ function  waitingTime(waitingTimes , serialNumber) {
     let result;
     let sum = 0;
     let timeAvg;
@@ -102,4 +102,6 @@ function  waitingTime(waitingTimes , serialNumber) {
         result = "Invalid Input";
     }
     return result;
-}
+ }
+
+ 
