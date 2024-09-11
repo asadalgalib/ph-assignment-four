@@ -43,3 +43,4 @@ function calculateFinalScore(obj) {
 const obj = { name: "Rajib", testScore: 40,  schoolGrade: 25, isFFamily : false };
 const ans = calculateFinalScore(obj)
 console.log(ans);
+
